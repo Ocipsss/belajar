@@ -1,0 +1,22 @@
+.container {
+  width: 90%;
+  margin: 20px auto;
+}
+
+/* TEXT-SHADOW */
+/* sama dengan box-shadow hanya saja text-shadow tidak mempunyai value inset dan spread */
+/* text-shadow: x-offset y-offset blur color; */
+span {
+  font-size: 50px;
+}
+.ts1 {
+  text-shadow: 5px 5px 10px green;
+}
+.ts2 {
+  text-shadow: 0 1px 1px black;
+  color: white;
+}
+.ts3 {
+  background-color: red;
+  text-shadow: 2px 2px 2px yellow;
+}

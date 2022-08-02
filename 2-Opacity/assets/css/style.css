@@ -1,0 +1,80 @@
+body {
+  background-image: url(../img/doodle-g4bbd64d8a_640.png);
+}
+h1 {
+  text-align: center;
+  background-color: white;
+}
+.container1 {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.container1 div {
+  display: inline-block;
+}
+
+/* kita bisa memebrikan value terhadap properti opacity dengan angka 0 sampai dengan 1 atau dengan persentasae */
+/* opacity: 0.5 0.6 0.7 | 50% 60% 70% */
+/* perilaku peroperti opacity akan menurunkannya terhadap childnya atau elemen yg menginduk terhadapnya */
+
+.opct1 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  background-color: red;
+  opacity: 90%;
+}
+.opct2 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  background-color: red;
+  opacity: 50%;
+}
+.opct3 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  background-color: red;
+  opacity: 20%;
+}
+.opct4 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  background-color: blue;
+  opacity: 0.7;
+}
+.opct5 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px;
+  background-color: red;
+  opacity: 0.3;
+}
+.opct6 {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  background-color: red;
+  opacity: 0.8;
+}
+
+.opct6a {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  background-color: blue;
+}

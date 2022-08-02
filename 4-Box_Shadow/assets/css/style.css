@@ -1,0 +1,58 @@
+h1 {
+  text-align: center;
+}
+.container {
+  width: 80%;
+  margin: 10px auto;
+}
+.container div {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  background-color: aqua;
+  display: inline-block;
+  text-align: center;
+  line-height: 200px;
+}
+
+/* box-shadow: <inset(opsional) <x-offset> <y-offset()> <blur> <sperad(opsional) <color>; */
+/* X-OFFSETT (untuk mengatur jarak bayangan pada sumbu horizontal (ke kiri(beri tanda -) atau ke kanan) */
+/* Y-OFFSET (untuk mengatur jarak bayangan pada sumbu vertical (ke atas(beri tanda-) atau ke bawah) */
+/* SPREAD size bayangan */
+/* INSET membuat bayangan berada didalam box */
+.bs1 {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.bs2 {
+  box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+}
+.bs3 {
+  box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+.bs4 {
+  box-shadow: 5px -5px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* menggunakan value spread */
+.bs5 {
+  box-shadow: -5px -5px 5px 5px rgba(0, 0, 0, 0.8);
+}
+/* akan nampak seperti border */
+.bs6 {
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+/* menambahkan inset */
+.bs7 {
+  box-shadow: inset 0 0 10px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* MULTIPLE SHADOW */
+/* multiple shadow bisa digunakan untuk memberikan lebih dari satu bayangan kepada sebuah element dengan menambahkan tanda koma*/
+.bs8 {
+  box-shadow: 5px 5px 5px black, -5px -5px 5px red;
+}
+/* dengan multiple shadow kita bisa membuat element mempunyai multiple border dengan cara dibawah ini */
+.bs9 {
+  box-shadow: 0 0 0 5px black, 0 0 0 10px red, 0 0 0 15px green, 0 0 0 20px blue;
+}

@@ -1,0 +1,58 @@
+body {
+  background-image: url(../img/doodle-g4bbd64d8a_640.png);
+  min-height: 1000px;
+}
+h1 {
+  text-align: center;
+  background-color: white;
+}
+.container1 {
+  width: 90%;
+  margin: 10px auto;
+}
+.container2 {
+  margin-top: 400px;
+}
+/* jika kita memberikan opacity terhadap suatu element maka element yang ada di dalamnya juga akan ikut terpengaruh. jika kita ingin memberikan transparansi yang lebih spesifik terhadap suatu elemen maka kita harus menggunakan RGBA atau HSLA */
+
+/* tanpa rgba / hsla */
+.opct6 {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  opacity: 0.8;
+  position: absolute;
+}
+
+.opct6a {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: blue;
+  position: relative;
+  bottom: -250px;
+  right: -250px;
+
+  opacity: 1;
+}
+
+/* dengan RGBA & HSLA */
+/* jika kita ingin memberikan transparansi secara lebih spesifik, kita harus mengganti background color nya dengan RGBA atau HSLA */
+.opct7 {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(20, 150, 255, 0.5);
+  position: absolute;
+}
+
+.opct7a {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: hsla(30, 80%, 50%, 0.5);
+  position: relative;
+  bottom: -250px;
+  right: -250px;
+}

@@ -1,0 +1,194 @@
+.container {
+  width: 90%;
+  margin: 10px auto;
+}
+.container div {
+  display: inline-block;
+}
+.br1 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+  border-radius: 20px;
+}
+
+.br2 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+
+  /* tulisan akan keluar dari flow nya */
+  border-radius: 20px;
+}
+
+.br3 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+  text-align: center;
+  line-height: 100px;
+
+  /* border radius untuk masing masing sudut */
+  border-top-right-radius: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 25px;
+}
+
+.br4 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+  text-align: center;
+  line-height: 100px;
+
+  /* shorthand border radius */
+  /* border-radius: top-left top-right bottom-right bottom-left */
+  /* border-radius: 10px 30px 5px 20px; */
+
+  /* atau bisa juga unitnya diganti persen */
+  border-radius: 0 50% 50% 50%;
+}
+
+.br5 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+
+  /* border-radius bisa berfungsi seperti bingkai foto jika kita memberikan sebuah gambar/foto sebagai background-image pada elemen html. tapi gambar/foto akan otomatis terpangkas oleh dimensi dari element tersebut, pastikn dimensi / ukuran element dan gambar nya sama */
+
+  /* jika ukuran gambar/foto tidak sesuai seperti dibawah ini */
+  /* background-image: url(../img/dog-gb5dcfadb5_640.jpg); */
+  /* border-radius: 20%; */
+
+  /* jika ukuran foto/atau gambar sesuai hasilnya seperti ini */
+  /* background-image: url(../img/image17.png);
+  border-radius: 20%; */
+
+  /* jika ukuran gambar/foto lebih kecil dari ukuran element, hasilnya seperti ini */
+  background-image: url(../img/lebihkecildari.png);
+  border-radius: 20%;
+  /* cara mengatasinya */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* br6 */
+.br6 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+  border-radius: 50%;
+
+  /* jika kita memberikan gambar sebagai elemen dan bukan sebagai background image, maka yang terjadi adalah gambar tsb keluar dari flow nya */
+  /* cara mengatasinya seperti dibawah ini */
+  overflow: hidden;
+}
+.br6 img {
+  height: 100px;
+}
+/* end-br6 */
+
+/* br7 */
+.br7 {
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  margin: 10px;
+  background-color: aqua;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.br7 img {
+  /* jika ukuran elemen lebih besar dari pembungkusnya maka samakan ukuran nya */
+  height: 100px;
+}
+/* end-br7 */
+
+/* ############################## */
+/* ############################## */
+/* LATIHAN BORDER-RADIUS */
+.containerLatihan h1 {
+  text-align: center;
+}
+.containerLatihan {
+  width: 90%;
+  margin: 20px auto;
+}
+.containerLatihan div {
+  display: inline-block;
+  margin: 20px;
+}
+.lbr1 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50% 0 50% 0;
+}
+.lbr2 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 0 50% 0 50%;
+}
+.lbr3 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 0 50% 50% 0;
+}
+.lbr4 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50% 0 0 50%;
+}
+.lbr5 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50% 50% 0 0;
+}
+.lbr6 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 0 0 50% 50%;
+}
+.lbr7 {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+.lbr8 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50% 50% 0 0;
+}
+.lbr9 {
+  width: 200px;
+  height: 400px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+.lbr10 {
+  width: 400px;
+  height: 200px;
+  background-color: aqua;
+  border-radius: 50%;
+}
+/* END-LATIHAN-BORDER-RADIUS */
