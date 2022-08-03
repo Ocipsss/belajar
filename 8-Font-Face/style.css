@@ -1,0 +1,99 @@
+/* WEBSITE FONT */
+/* google font */
+/* fontsquirell.com */
+/* fontspring.com */
+/* webtype.com */
+/* typotheque.com */
+/* dll */
+
+/* website font generator www.transfonter.org */
+
+/* ########################## */
+
+.container1,
+.container2 {
+  width: 90%;
+  margin: 20px auto;
+}
+.container1 span {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+.container2 span {
+  display: block;
+  margin: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* menggunakan font dari google */
+.container1 .ff1 {
+  font-family: "BhuTuka Expanded One", cursive;
+}
+.container1 .ff2 {
+  font-family: "Square Peg", cursive;
+}
+.container1 .ff3 {
+  font-family: "Kanit", sans-serif;
+}
+.container1 .ff4 {
+  font-family: "Lobster", cursive;
+}
+.container1 .ff5 {
+  font-family: "Pacifico", cursive;
+}
+
+/* font-face */
+/* sintaks lengkap font-face */
+/* @font-face */
+/* src: url(lokasi/file/fontBaru.eot); */
+/* src: url(lokasi/file/fontBaru.eot?#iefix) format(embedded-opentype), */
+/* url(lokasi/file/fontBaru.woff2) format(woff2), */
+/* url(lokasi/file/fontBaru.woff) format(woff), */
+/* url(lokasi/file/fontBaru..ttf) format(trutype), */
+/* url(lokasi/file/fontBaru.svg#svgFontName) format(svg); */
+
+/* FONT-FACE */
+@font-face {
+  font-family: alexBrush;
+  src: url(assets/font/AlexBrush-Regular.ttf);
+}
+@font-face {
+  font-family: ChunkFiveRegular;
+  src: url(assets/font/ChunkFive-Regular.woff);
+}
+@font-face {
+  font-family: SourceCodeProBold;
+  src: url(assets/font/SourceCodePro-Bold.woff);
+}
+@font-face {
+  font-family: KhausanScriptRegular;
+  src: url(assets/font/KaushanScript-Regular.woff);
+}
+@font-face {
+  font-family: RubikBold;
+  src: url(assets/font/Rubik-Bold.woff);
+}
+@font-face {
+  font-family: SourceCodeProLight;
+  src: url(assets/font/SourceCodePro-LightIt.woff);
+}
+/* END-FONT-FACE */
+
+.container2 .ff1 {
+  font-family: alexBrush;
+}
+.container2 .ff2 {
+  font-family: ChunkFiveRegular;
+}
+.container2 .ff3 {
+  font-family: SourceCodeProBold;
+}
+.container2 .ff4 {
+  font-family: KhausanScriptRegular;
+}
+.container2 .ff5 {
+  font-family: RubikBold;
+}
