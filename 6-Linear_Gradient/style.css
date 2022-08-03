@@ -1,0 +1,83 @@
+.container {
+  width: 90%;
+  margin: 10px auto;
+  min-height: 10000px;
+}
+
+/* LINEAR GRADIENT */
+/* linear gradient bukan property css3, melainkan value untuk property background atau background-image */
+/* syntax simple nya */
+/* background/background-image: linear-gradient(warna awal, warna akhir); */
+/* syntax lebih spesifik */
+/* background/background-image: linear-gradient(warnaAwal, warnaKedua, warnaKetiga, dst); */
+
+.lg1 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+  margin: 10px auto;
+  background: linear-gradient(aqua, salmon);
+}
+.lg2 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+  margin: 10px auto;
+  background: linear-gradient(aqua, yellow, blue, salmon);
+}
+
+/* untuk mengnubah arah gradasi bisa memberikan value baru sebelum warna awal, mau diberi sudut atau arah. contoh */
+/* background: linear-gradient(sudut / arah, warnaAwal, warna-N); */
+.lg3 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+  margin: 10px auto;
+  /* background: linear-gradient(90deg, rgb(14, 173, 173), rgb(36, 4, 87), rgb(191, 191, 228), rgb(85, 16, 8)); */
+
+  /* jika ingin dari kanan ke kiri maka beri tanda minus */
+  background: linear-gradient(-45deg, blue, green);
+}
+
+/* arah yang bisa diberikan kepada gradasi */
+/* to bottom, to top, to left, to right */
+/* to left top, to left bottom, to right top, to right bottom */
+
+.lg4 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+  margin: 10px auto;
+  background: linear-gradient(to bottom right, yellow, blue);
+}
+
+/* color stop */
+/* dengan memberikan color stop pada gradasi kita bisa memberikan bobot warna yang berbeda sesaui keinginan kita */
+/* caranya dengan memberikan persentase kepada setiap warna */
+.lg5 {
+  width: 600px;
+  height: 300px;
+  border: 2px solid black;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 300px;
+  margin: 10px auto;
+  background: linear-gradient(to bottom, yellow 70%, blue 90%);
+}
