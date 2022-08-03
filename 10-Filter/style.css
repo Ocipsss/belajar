@@ -1,0 +1,94 @@
+/* Filter adalah properti css3 yang digunakan untuk memberikan efek visual pada gambar, background atau border */
+
+/* filter: <tipe-filter>; */
+/* tipe filter : 
+- blur (angka / %) default blur 0, lebih besar angka lebih besar pula efek nya.
+
+- grayscale (angka / %) Mengubah gambar menjadi skala abu-abu.
+0% (0) adalah default dan mewakili gambar asli.
+100% akan membuat gambar benar-benar abu-abu (digunakan untuk gambar hitam putih).
+Catatan: Nilai negatif tidak diperbolehkan.
+
+- invert (angka / %) Membalikkan sampel dalam gambar.
+0% (0) adalah default dan mewakili gambar asli.
+100% akan membuat gambar benar-benar terbalik.
+Catatan: Nilai negatif tidak diperbolehkan.
+
+- brightness (angka / %) Menyesuaikan kecerahan gambar. Menyesuaikan kecerahan gambar.
+0% akan membuat gambar benar-benar hitam.
+100% (1) adalah default dan mewakili gambar asli.
+Nilai di atas 100% akan memberikan hasil yang lebih cerah.
+
+- sepia (angka / %) Mengonversi gambar menjadi sepia.
+0% (0) adalah default dan mewakili gambar asli.
+100% akan membuat gambar benar-benar sepia.
+Catatan: Nilai negatif tidak diperbolehkan.
+
+- opacity (angka / %) Mengatur tingkat opacity untuk gambar. Tingkat opacity menggambarkan tingkat transparansi, di mana:
+0% benar-benar transparan.
+100% (1) adalah default dan mewakili gambar asli (tidak ada transparansi).
+Catatan: Nilai negatif tidak diperbolehkan.
+
+- contrast (angka / %) Menyesuaikan kontras gambar.
+0% akan membuat gambar benar-benar hitam.
+100% (1) adalah default, dan mewakili gambar asli.
+Nilai di atas 100% akan memberikan hasil yang lebih kontras.
+
+- hue-rotate (deg) 	Applies a hue rotation on the image. The value defines the number of degrees around the color circle the image samples will be adjusted. 0deg is default, and represents the original image.
+Note: Maximum value is 360deg.
+
+- drop-shadow (sama sepeti box-shadow)
+
+- sature (angka / %) Menjenuhkan gambar.
+0% (0) akan membuat gambar benar-benar tidak jenuh.
+100% adalah default dan mewakili gambar asli.
+Nilai lebih dari 100% memberikan hasil super-jenuh.
+Catatan: Nilai negatif tidak diperbolehkan.
+ */
+
+.container {
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid black;
+}
+.container img {
+  width: 300px;
+  height: 300px;
+}
+.container div {
+  margin: 20px;
+  display: inline-block;
+}
+
+/* START */
+.fltr1 img {
+  filter: blur(2px);
+}
+.fltr2 {
+  filter: brightness(50%);
+}
+.fltr3 {
+  filter: contrast(10%);
+}
+.fltr4 {
+  filter: drop-shadow(5px 15px 15px black);
+}
+.fltr5 {
+  filter: grayscale(50%);
+}
+.fltr6 {
+  filter: hue-rotate(240deg);
+}
+.fltr7 {
+  filter: invert(80%);
+}
+.fltr8 {
+  filter: opacity(30%);
+}
+.fltr9 {
+  filter: saturate(20%);
+}
+.fltr10 {
+  filter: sepia(200%);
+  -webkit-filter: sepia(200%);
+}
