@@ -1,0 +1,112 @@
+.container {
+  width: 90%;
+  margin: 10px auto;
+  min-height: 10000px;
+}
+
+/* jika linear-gradient adalah gradasi warna secara lurus, radial gradient adalah gradasi warna secara melingkar */
+/* unutk syntax sederhana nya sama persis dengan linear-gradient */
+/* background: radial-gradient: (warnaAwal, warnaAkhir); */
+.rg1 {
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(green, blue);
+}
+
+/* sama seperti linear gradient kitabisa memberikan lebih dari dua warna */
+
+.rg2 {
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(yellow, green, blue);
+}
+
+/* color stop radial gradient */
+.rg3 {
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(yellow 20%, green 30%, blue 40%);
+}
+
+/* sintaks lengkap radial-gradient */
+/* radial-gradient(<tipe> <jangkauan> at <posisi-y> <posisi-x>, warna1, warna2, warna-n) */
+/* #-tipe : ellipse atau circle */
+/* #-jangkauan : jangkauan dari gradasi warna nya */
+/* ada beberapa tipe jangkauan :
+- closest-corner : jarak dari pusat gradient ke sudut terdekat element
+- closest-side : jarak dari pusat gradient ke sisi terdekat element
+- farthest-corner : jarak dari pusat gradient ke sudut terjauh element
+- farthest-side : jarak dari pusat gradient ke sisi terjauh element */
+/* #-posisi : pusat gradasi*/
+.rg4 {
+  width: 700px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(closest-side, green, blue);
+}
+.rg5 {
+  width: 700px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(circle farthest-side, green, blue);
+}
+
+/* memindahkan pusat gradasi */
+/* psoisi-y : sumbu secara vertikal (menurun) PX
+- top
+- center
+- bottom */
+/* posisi-x sumbu secara horizontal (mendatar) PX
+- left
+- center
+- right */
+.rg6 {
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(circle at top left, yellow, green, blue);
+}
+.rg7 {
+  width: 300px;
+  height: 300px;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(yellow, green, blue);
+}
