@@ -1,0 +1,205 @@
+/* transition */
+/* memungkinkan kita dapat mengubah nilai dari properti html secara halus */
+/* kita bisa memberikan 4 parameter kepada transition */
+/* transition: [properti] <durasi> [fungsi] [delay] */
+/* 
+- durasi (wajib) s / ms
+- properti (memberikan properti lain di keadaaan akhir)
+daftar properti yang bisa dianimasikan secara halus diantaranya : 
+background-color, background-position, background-size, border, color, filter, fontsize, line-height, top left bottom right, margin padding, width height, opacity, transform, word spacing, letter spacing, dll.
+# yang tidak bisa dianimasikan diantaranya : font-family, display, position dll
+
+- fungsi transisi / timing funtion
+nilai funsi diantaranya : ease (default), ease-in, ease-out, ease-in-out, linear, cubic-bezier(w,x,y,z)
+- delay 
+ */
+
+/* ### NOTE ### */
+/* SELALU LETAKAN TRANSISI DI KEADAAN AWAL */
+.container {
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid black;
+}
+.container div {
+  background-color: aqua;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 100px;
+}
+
+/* START */
+/* jika transisi diletakan di keadaan akhir efek keluar nya tidak akan mulus seperti saat pertama efek berjalan */
+.transition1 {
+  width: 100px;
+  height: 100px;
+}
+.transition1:hover {
+  transform: rotate(180deg);
+  transition: 1s;
+}
+/* jika transition diletakan di keadaan awal, maka efek nya akan mulus semua */
+.transition2 {
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+}
+.transition2:hover {
+  transform: rotate(180deg);
+}
+
+/* properti */
+/* pergerakan transition3 tidak akan mulus, karena hanya meng hover si kotak tsb, gantilah hover terhadap container sehingga menjadikan pergerakannya mulus */
+.transition3 {
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+}
+.transition3:hover {
+  rotate: 180deg;
+  margin-left: 500px;
+}
+
+/* setelah hover diletakan pada container maka pergerakannya akan mulus */
+.container2 {
+  width: 100%;
+  background-color: white !important;
+  border: 1px solid black;
+}
+.transition4 {
+  width: 100px;
+  height: 100px;
+  transition: 1s;
+}
+.container2:hover .transition4 {
+  rotate: 280deg;
+  margin-left: 500px;
+  background-color: salmon;
+}
+
+/* bisa juga memililh salahsatu properti yang ingin kita beri transisi */
+.transition5 {
+  width: 100px;
+  height: 100px;
+  /* perintah dibawah artinya kita hanya mentransisikan transform */
+  transition: margin-left 1.5s;
+}
+.container:hover .transition5 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: lime;
+}
+
+/* fungsi ease & ease-in */
+/* ease */
+.transition6 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: 5s ease;
+}
+.container:hover .transition6 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+
+/* ease-in */
+.transition7 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: 5s ease-in;
+}
+.container:hover .transition7 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+/* ### */
+/* fungsi ease-out & ease-in-out */
+.transition8 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: 5s ease-out;
+}
+.container:hover .transition8 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+/* ease-in-out */
+.transition9 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: 5s ease-in-out;
+}
+.container:hover .transition9 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+.transition10 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: 5s linear;
+}
+.container:hover .transition10 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+.transition11 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: 5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.container:hover .transition11 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+
+/* delay */
+.transition12 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: transform 5s 2s, margin-left 5s 2s, cubic-bezier(0.075, 0.82, 0.165, 1) 5s 2s, backcol 5s 5s;
+}
+.container:hover .transition12 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
+.transition13 {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  background-color: aqua;
+  transition: transform 5s 2s, margin-left 2s 5s, cubic-bezier(0.075, 0.82, 0.165, 1) 2s s5, backcol 2s 5s;
+}
+.container:hover .transition13 {
+  transform: rotate(360deg);
+  margin-left: 800px;
+  background-color: salmon;
+}
