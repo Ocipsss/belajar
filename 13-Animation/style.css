@@ -1,0 +1,108 @@
+/* ANIMATION */
+/* inti dari animationj itu ada pada keyframe, untuk membuat keyframe seperti dibawah ini */
+/* 
+@keyframe [name] {
+    from {
+        [properti css]
+    }
+    to {
+        [properti css]
+    }
+} 
+*/
+
+/* nilai-nilai yang bisa diberika pada properti animation. animation : [name] [duration] [timing-function] [delay] [interation-count] [direction] [fill-mode] [play-state];
+-[name] atau nama. harus sama dengan nama di keyframes nya
+-[duration], [timing-function] & [delay] sama persis dengan transition.
+-[interaction-count] pengulangan atau mau diulang berapakali. bisa diberi angka atau infinite(terusmenerus)
+-[direction] normal | reverse | alternate | alternate-reverse
+secara default nilainya adalah normal, animasinya akan berjalan dari awal sampai akhir.
+reverse kebalikan nya yaitu dari akhir dulu menuju awal.
+alternate membuat animasinya bolak-balik
+-[fill-mode] none | forwards | backwards | both. untuk menentukan akhir dari transisi nya seperti apa.
+-[play-state] running | paused. defaultnya adalah running. paused biasanya dipakai menggunakan javascript supaya bisa berhenti di tengah jalannya animasi
+*/
+
+.container {
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid black;
+  min-height: 300px;
+}
+
+/* tanpa menggunakan animation */
+.animation1 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  transition: 3s;
+}
+.container:hover .animation1 {
+  scale: 2;
+  margin-left: 500px;
+  margin-top: 100px;
+}
+
+/* menggunakan animation */
+
+.animation2 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  /* transition: 3s; */
+}
+.container:hover .animation2 {
+  animation: animasi2 3s;
+}
+@keyframes animasi2 {
+  /* bisa juga keadaannya diganti dengan % */
+  from {
+    /* 0% */
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+  }
+  to {
+    /* 100% */
+    scale: 2;
+    margin-left: 500px;
+    margin-top: 100px;
+  }
+}
+
+/* menerapkan beberapa keadaan pada animation */
+
+.animation3 {
+  width: 100px;
+  height: 100px;
+  background-color: aqua;
+  /* letakan animasi disini, ketika page di refres maka animasi akan otomatis berjalan */
+}
+.container:hover .animation3 {
+  animation: animasi3 2s 3 alternate forwards;
+}
+
+@keyframes animasi3 {
+  0% {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+  }
+  25% {
+    width: 50px;
+    height: 50px;
+    margin-left: 125px;
+    background-color: yellowgreen;
+  }
+  50% {
+    width: 100px;
+    height: 100px;
+    margin-left: 250;
+    background-color: black;
+  }
+  100% {
+    scale: 1;
+    margin-left: 500px;
+    margin-top: 100px;
+  }
+}
