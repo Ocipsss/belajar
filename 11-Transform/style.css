@@ -1,0 +1,54 @@
+/* TRANSFORM */
+/* merupakan properti css3 yang memungkinkan kita dapat memanipulasi format visual dari elemen html */
+/* kita dapat melakukan transformasi 2D & 3D */
+/* transform: <fungsi>; */
+/* fungsi transformasi : 
+- scale (memperbesar / memmperkecil
+scale(angka), secaleX(angka), scaleY(angka)
+
+- rotate (memutar)
+rotate(deg), rotateX(deg), rotateY(deg)
+
+- skew (membuat miring / condong
+skew(deg), skewX(deg), skewY(deg)
+
+- trasnlate (mengubah posisi
+translate(px), traslateX(px), translateY(px)
+ */
+/* properti transform ini masi experimental, mungkin kita memerlukan vendor prefix untuk kedepannya */
+
+.container {
+  width: 90%;
+  margin: 10px auto;
+  border: 3px solid black;
+}
+.container div {
+  width: 300px;
+  height: 300px;
+  background-color: aqua;
+  margin: 10px;
+  text-align: center;
+  line-height: 300px;
+  display: inline-block;
+}
+/* start */
+.transform1:hover {
+  transform: scale(0.5);
+  transition: 1s;
+}
+.transform2:hover {
+  transform: rotate(45deg) rotateX(205deg) rotateY(45deg);
+  transition: 1.5s;
+}
+.transform3:hover {
+  transform: skewX(45deg);
+  transition: 1s;
+}
+.transform4:hover {
+  transform: translate(50px, 100px);
+  transition: 1s;
+}
+.transform5:hover {
+  transform: rotate(90deg) translateY(-500px);
+  transition: 1s;
+}
